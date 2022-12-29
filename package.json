@@ -1,6 +1,10 @@
 {
   "name": "games-api",
   "version": "1.0.0",
+  "author": {
+    "name": "Suraj Muraleedharan",
+    "url": "https://smuralee.com"
+  },
   "description": "Games API using Express",
   "main": "app.js",
   "scripts": {

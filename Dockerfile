@@ -1,4 +1,4 @@
-FROM node:15.13-slim
+FROM node:lts-slim
 
 RUN useradd -u 101 alpha
 
@@ -15,6 +15,6 @@ RUN npm install
 
 COPY --chown=alpha:alpha . .
 
-EXPOSE 3000
+EXPOSE 8080
 
 ENTRYPOINT ["node","app.js"]
