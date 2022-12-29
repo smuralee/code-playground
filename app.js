@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 console.log("Games server starting...");
 
 app.get('/', function (req, res) {
-    let remoteAddr = req.connection.remoteAddress;
+    let remoteAddr = req.socket.remoteAddress;
     console.log("Received request from " + remoteAddr);
     res.end(
         "Received request from " +
